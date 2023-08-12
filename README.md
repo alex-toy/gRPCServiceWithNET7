@@ -16,8 +16,11 @@ In this project we build a gRPC service with 5 methods: Create, Read (single), L
 - install packages
 ```
 Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore.design
+Microsoft.Extensions.Configuration
 Grpc.Tools
+Microsoft.AspNetCore.Grpc.JsonTranscoding
 ```
 
 CAUTION : anytime you modify the protobuf files, yo need to rebuild the project.

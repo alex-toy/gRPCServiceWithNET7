@@ -1,12 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using ToDoApp.Data;
 using ToDoApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Additional configuration is required to successfully run gRPC on macOS.
-// For instructions on how to configure Kestrel and gRPC clients on macOS, visit https://go.microsoft.com/fwlink/?linkid=2099682
+string connectionString = builder.Configuration.GetSection("ConnectionStrings:constring").Value;
 
-// Add services to the container.
-builder.Services.AddGrpc();
+
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddGrpc().AddJsonTranscoding();
 
 var app = builder.Build();
 
