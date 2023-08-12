@@ -1,5 +1,4 @@
 using Grpc.Core;
-using ToDoApp;
 
 namespace ToDoApp.Services
 {

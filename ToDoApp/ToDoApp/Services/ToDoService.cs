@@ -1,6 +1,6 @@
 using Grpc.Core;
 using Microsoft.EntityFrameworkCore;
-using ToDoGrpc.Data;
+using ToDoApp.Data;
 using ToDoGrpc.Models;
 
 namespace ToDoGrpc.Services;
