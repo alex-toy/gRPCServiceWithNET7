@@ -55,3 +55,17 @@ CAUTION : anytime you modify the protobuf files, yo need to rebuild the project.
 
 - invoke read method
 <img src="/pictures/todo2.png" title="todo"  width="900">
+
+
+### Add Http Endpoint
+
+- read all
+<img src="/pictures/http.png" title="http endpoint"  width="900">
+
+- create
+<img src="/pictures/http1.png" title="http endpoint"  width="900">
+<img src="/pictures/http2.png" title="http endpoint"  width="900">
+
+- update
+<img src="/pictures/http3.png" title="http endpoint"  width="900">
+<img src="/pictures/http4.png" title="http endpoint"  width="900">
